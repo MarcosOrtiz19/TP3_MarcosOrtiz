@@ -1,0 +1,54 @@
+.tabla_autos {
+    width: 100%;
+    max-width: auto;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tabla_autos th:hover, .tabla_autos td:hover, .tabla_autos tr:hover {
+    transform: scale(1.05);
+}
+
+
+.tabla_autos thead {
+    background-color: #333;
+    color: #fff;
+}
+
+.tabla_autos th, .tabla_autos td {
+    padding: 10px;
+    border: 1px solid #ddd
+}
+
+.tabla_autos th {
+    background-color: rgb(3, 64, 80);
+}
+
+.tabla_autos tr:nth-child(even) {
+    background-color: #04a1a7;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1.texto_bienvenida {
+        font-size: 1.8em;
+    }
+
+    .tabla_autos {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .boton {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .imagen_auto {
+        width: 120px;
+    }
+}

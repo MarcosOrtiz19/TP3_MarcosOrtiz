@@ -1,0 +1,89 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}       
+
+.auto_tarjeta {
+    background-color: #fff;
+    width: 250px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px auto;
+}
+
+@keyframes animacionTarjeta {
+    0% { transform: (0); }
+    50% { transform: (-10px); }
+    100% { transform: (0); }
+}
+
+.auto_tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #030303;
+}
+
+.auto_tarjeta img {
+    width: 100%;
+    height: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.auto_info {
+    padding: 15px;
+}
+
+.auto_info h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.auto_info p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .principal {
+        width: 100%;
+    }
+
+    h1.texto_bienvenida {
+        font-size: 1.5em;
+    }
+
+    .imagen_movimiento {
+        max-width: 150px;
+    }
+
+    .auto_tarjeta {
+        width: 100%;
+    }
+
+    .tabla_autos {
+        font-size: 0.8em;
+    }
+
+    .boton {
+        width: 90%;
+        padding: 8px 12px;
+    }
+
+    .imagen_auto {
+        width: 100px;
+    }
+}
